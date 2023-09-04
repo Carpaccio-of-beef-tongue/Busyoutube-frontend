@@ -18,3 +18,12 @@ body {
     align-items: center;
     align-items: start;
 }
+
+h1 {
+    /*font*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'M PLUS 1 Code', monospace;
+    font-family: 'Oswald', sans-serif;
+    /*position*/
+    text-align: center;
+}
