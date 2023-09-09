@@ -1,9 +1,13 @@
-/*log*/
-console.log("hello")
-
-/* コンテキストメニューを作成 */
+// コンテキストメニューを作成
 const parent = chrome.contextMenus.create({
-    id: "share",
-    title: "BusyouTubeにURLを貼り付ける",
-    contexts: ["all"],
-  });
+  id: "share",
+  title: "BusyouTube",
+  contexts: ["link"],
+});
+
+// コンテキストメニューのクリックイベントを処理
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+  if (info.menuItemId === "share" && info.linkUrl) {
+      console.log("リンク: " + info.linkUrl);
+  }
+});
