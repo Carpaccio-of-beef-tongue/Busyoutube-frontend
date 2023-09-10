@@ -3,11 +3,7 @@
     "name": "BusyouTube",
     "description": "Base Level Extension",
     "version": "1.0",
-    "permissions": ["activeTab", "scripting", "contextMenus", "tabs"],
-    "action": {
-        "default_title": "タイトルとURLをコピー",
-        "default_popup": "./popup/index.html"
-    },
+    "permissions": ["activeTab", "scripting", "contextMenus"],
     "background": {
         "service_worker": "./scripts/content.js"
     }
