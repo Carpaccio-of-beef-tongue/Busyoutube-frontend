@@ -3,7 +3,7 @@
     "name": "BusyouTube",
     "description": "Base Level Extension",
     "version": "1.0",
-    "permissions": ["activeTab", "scripting", "contextMenus", "tabs"],
+    "permissions": ["activeTab", "scripting", "contextMenus"],
     "background": {
         "service_worker": "./scripts/content.js"
     }
